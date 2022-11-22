@@ -1,0 +1,129 @@
+/* RESET  CSS*/
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /* outline: 1px solid green; */
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-size: 1rem;
+    line-height: 1;
+    background-color: papayawhip;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* HEADER */
+
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background:rgba(224, 159, 170, 0.8);
+}
+
+.header,
+.logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu__item {
+    display: inline-block;
+    padding: 5%;
+}
+
+
+.logo {
+    width: 20%;
+}
+
+.logo__picture-wrap {
+    width: 50%;
+}
+
+.logo__picture {
+    width: 100%;
+    min-width: 50%;
+}
+
+.menu-wrap {
+    width: 60%;
+}
+
+.menu__item {
+    position: relative;
+}
+
+
+.submenu__link,
+.dropdown__link {
+    white-space: nowrap;
+    display: block;
+    padding: 10px;
+    z-index: 10;
+    background: papayawhip;
+}
+
+.submenu,
+.dropdown {
+    display: none;
+    position: absolute;
+}
+
+.dropdown {
+    top: 80px;
+    left: 120px;
+}
+
+.menu__item:hover .submenu,
+.submenu__item--secondary:hover .dropdown {
+    display: block;
+}
+.menu,
+.submenu,
+.dropdown {
+    font-size: 0;
+    padding: 2%;
+}
+
+.menu__item,
+.submenu__item,
+.dropdown__item {
+    font-size: 1.5rem;
+}
+/* SECTION */
+
+.section {
+    margin-top: 15%;
+}
+
+[class$="title"] {
+    text-align: center;
+    padding: 10px 2%;
+}
+
+p[class$="item"] {
+    padding: 1% 2%;
+    text-indent: 10%;
+} 
+
+
