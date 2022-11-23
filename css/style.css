@@ -23,7 +23,7 @@ ol, ul {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none; /*цвет ссылок и отсутсвие подчеркивания по умолчанию*/
     color: black;
 }
 
@@ -70,38 +70,38 @@ a {
 
 .submenu__link,
 .dropdown__link {
-    white-space: nowrap;
+    white-space: nowrap; /*чтобы не было переноса*/
     display: block;
     padding: 10px;
-    z-index: 10;
+    z-index: 10; /*чтобы точно перекрывало*/
 }
 
 .submenu__link,
 .dropdown__link,
 .header {
-    background:rgba(224, 159, 170, 0.8);
+    background:rgba(224, 159, 170, 0.9);
 }
 
 .submenu,
 .dropdown {
-    display: none;
+    display: none; /*чтобы изначально на странице не отображались*/
     position: absolute;
 }
 
 .dropdown {
-    top: 80px;
-    left: 120px;
+    top: 85px; /*фиксирую позиционированный элемент в определенной точке*/
+    left: 137px;
 }
 
 .menu__item:hover .submenu,
-.submenu__item--secondary:hover .dropdown {
+.submenu__item--secondary:hover .dropdown { /*чтобы при наведении показывались выпадающие меню, и они были блоками*/
     display: block;
 
 }
 .menu,
 .submenu,
 .dropdown {
-    font-size: 0;
+    font-size: 0; /*выставляю значение ноль для ul*/
     padding: 2%;
 }
 
@@ -111,12 +111,20 @@ a {
     font-size: 1.5rem;
 }
 
+.menu__item:hover,
+.submenu__item:hover,
+.dropdown__item:hover {
+    text-decoration: underline; /*чтобы ссылки подчеркивались при наведении*/
+
+}
+
 /* SECTION */
 .section {
     margin-top: 15%;
 }
 
-[class$="title"] {
+[class$="title"],
+.footer {
     text-align: center;
     padding: 10px 2%;
 }
