@@ -1,11 +1,38 @@
-/* HEADER */
+/* RESET  CSS*/
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
 
+html {
+    font-size: 16px;
+}
+
+body {
+    font-size: 1rem;
+    line-height: 1;
+    background-color: papayawhip;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* HEADER */
 .header {
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
-    background:rgba(224, 159, 170, 0.8);
 }
 
 .header,
@@ -19,7 +46,6 @@
     display: inline-block;
     padding: 5%;
 }
-
 
 .logo {
     width: 20%;
@@ -42,14 +68,18 @@
     position: relative;
 }
 
-
 .submenu__link,
 .dropdown__link {
     white-space: nowrap;
     display: block;
     padding: 10px;
     z-index: 10;
-    background: papayawhip;
+}
+
+.submenu__link,
+.dropdown__link,
+.header {
+    background:rgba(224, 159, 170, 0.8);
 }
 
 .submenu,
@@ -66,6 +96,7 @@
 .menu__item:hover .submenu,
 .submenu__item--secondary:hover .dropdown {
     display: block;
+
 }
 .menu,
 .submenu,
@@ -79,8 +110,8 @@
 .dropdown__item {
     font-size: 1.5rem;
 }
-/* SECTION */
 
+/* SECTION */
 .section {
     margin-top: 15%;
 }
